@@ -13,6 +13,10 @@ from datetime import datetime
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Import database
+from src.database import init_db, SessionLocal
+from src.models import Asset, Event
+
 # Import routers
 from src.event_collector import router as events_router
 from src.discovery import router as discovery_router
@@ -24,6 +28,13 @@ from src.drift_detection import router as drift_router
 async def lifespan(app: FastAPI):
     # Startup
     logger.info("🚀 Student 1: Input Layer starting...")
+    logger.info("Initializing database...")
+    try:
+        init_db()
+        logger.info("✅ Database initialized successfully")
+    except Exception as e:
+        logger.error(f"❌ Database initialization failed: {e}")
+    
     logger.info("Initializing event collector, discovery engine, SBOM generator, and drift detection...")
     yield
     # Shutdown

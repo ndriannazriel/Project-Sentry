@@ -50,7 +50,7 @@ services:
   # Student 2: Enrichment Layer - CTI & Analysis Engine
   student-2-enrichment:
     build:
-      context: ./student-2-enrichment-layer
+      context: ./student-2-enrichment-layer #root 
       dockerfile: ../docker/Dockerfile.student2
     container_name: sentinel-enrichment-layer
     environment:

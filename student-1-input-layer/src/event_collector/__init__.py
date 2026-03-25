@@ -1,1 +1,4 @@
-"""__init__.py for event-collector"""
+"""Event Collector Module"""
+from . import router
+
+__all__ = ['router']

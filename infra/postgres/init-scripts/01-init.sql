@@ -3,7 +3,8 @@
 
 -- Create extensions
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-CREATE EXTENSION IF NOT EXISTS "pgvector";
+-- pgvector extension is optional (may not be available in standard PostgreSQL image)
+-- CREATE EXTENSION IF NOT EXISTS "pgvector";
 CREATE EXTENSION IF NOT EXISTS "pg_trgm";
 
 -- === STUDENT 1: INPUT LAYER TABLES ===

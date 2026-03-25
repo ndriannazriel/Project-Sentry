@@ -1,1 +1,4 @@
-"""__init__.py for sbom-generator"""
+"""SBOM Generator Module"""
+from . import router
+
+__all__ = ['router']

@@ -1,1 +1,4 @@
-"""__init__.py for drift-detection"""
+"""Drift Detection Module"""
+from . import router
+
+__all__ = ['router']
