@@ -6,6 +6,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 -- pgvector extension is optional (may not be available in standard PostgreSQL image)
 -- CREATE EXTENSION IF NOT EXISTS "pgvector";
 CREATE EXTENSION IF NOT EXISTS "pg_trgm";
+CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE;
 
 -- === STUDENT 1: INPUT LAYER TABLES ===
 
