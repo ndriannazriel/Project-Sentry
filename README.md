@@ -2,7 +2,7 @@
 
 # 🛡️ Project Sentinel: SOC-in-a-Box for Malaysian SMEs
 
-**Project Sentinel** is a self-hosted, AI-driven Security Intelligence Platform designed specifically for Malaysian Small and Medium-sized Enterprises (SMEs). It bridges the gap between enterprise-grade security tools and small-business usability by providing autonomous threat detection, enrichment, and prescriptive remediation advice
+**Project Sentinel** is a self-hosted, AI-driven Security Intelligence Platform designed specifically for Malaysian Small and Medium-sized Enterprises (SMEs). It bridges the gap between enterprise-grade security tools and small-business usability by providing autonomous threat detection, enrichment, and prescriptive remediation advice.
 
 ## 📋 Project Overview
 
